@@ -1,0 +1,23 @@
+/* Storage Backend
+   SQLite local task database
+   - tasks.db with normalized model
+   - ADHD-specific metadata separate from interoperable data
+   - Version-migrated schema
+   - Offline cache for CalDAV sync
+*/
+
+import QtQuick 2.15
+
+Schema {
+    /* Task table (interoperable - sync layer)
+     * id, title, description, created_at, updated_at,
+     * start_at, due_at, completed_at, status, priority,
+     * project, tags, reminders, snooze_until,
+     * estimated_duration, provider, remote_id, metadata
+     */
+     
+    /* ADHD-specific metadata table
+     * attention_state, last_notified_at, quiet_until,
+     * escalation_count, distraction_origin, capture_source
+     */
+}

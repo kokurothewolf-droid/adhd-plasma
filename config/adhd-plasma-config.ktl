@@ -1,0 +1,38 @@
+/* ADHD Plasma Configuration Module
+   Centralized configuration for all ADHD Plasma settings:
+   
+   - task/calendar sources
+   - default task list
+   - reminders
+   - Attention Queue settings
+   - quiet hours
+   - escalation behavior
+   - focus behavior
+   - Quick Capture shortcut
+   - time awareness preferences
+   - appearance
+   - privacy
+   - local-only mode
+*/
+
+import QtQuick 2.15
+import org.kde.kconfig 2.0
+
+ConfigModule {
+    /* Groups:
+     * [tasks] - sources, default list
+     * [attention] - queue, escalation, quiet hours
+     * [capture] - shortcut, NL date parsing
+     * [time] - time awareness, transition warnings
+     * [appearance] - colors, typography, animation
+     * [privacy] - local-only mode, telemetry opt-out
+     * [general] - version, first-run flags
+     */
+     
+    /* Example entries:
+     * TaskSources: { type: "caldav", url: "...", enabled: true }
+     * AttentionQueue: { escalationInterval: 15, quietHoursStart: "22:00", quietHoursEnd: "08:00" }
+     * CaptureShortcut: { globalShortcut: "Super+Q", fallback: "Ctrl+Shift+C" }
+     * TimeAwareness: { showTransitions: true, transitionWarning: 20 }
+     */
+}

@@ -1,0 +1,10 @@
+[Plugin]
+Name=CAPTURE
+x-plasma-plasmoid=CAPTURE
+X-KDE-PluginInfo-Author=ADHD Plasma
+X-KDE-PluginInfo-License=GPL-3.0-only
+X-KDE-PluginInfo--Version=0.1.0
+X-KDE-PluginInfo-Email=kokurothewolf@gmail.com
+X-KDE-PluginInfo-Name=capture
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PlasmaApiVersion=6.7
